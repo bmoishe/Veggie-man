@@ -17,7 +17,7 @@ function VeggieMan() {
     this.y = this.y + this.yspeed*scle;
     this.x = constrain(this.x, 0, width-scle)
     this.y = constrain(this.y, 0, height-scle)
-    document.getElementById("score").innerHTML = total;
+    document.getElementById("score").innerHTML = "Health: " + total;
 
   }
 
