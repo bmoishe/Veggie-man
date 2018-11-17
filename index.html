@@ -5,30 +5,93 @@
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
         <style media="screen">
-          body {
-            background-color: white;
-            margin: 0%;
-            padding-left: 5%;
-          }
+               body {
+        background-color: white;
+        margin: 0%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+      }
 
-          h1 {
-            color: black;
-            font-size:10vw;
-            text-align: center;
-            font-family: "Helvetica Neue"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-          }
-          h2 {
-            color: black;
-            font-size:7vw;
-            text-align: center;
-            font-family: "Helvetica Neue"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-          }
+      h1 {
+        color: black;
+        text-align: center;
+        font-size:10vw;
+        padding-right: 25%;
+        font-family: Helvetica; font-size: 24px;   font-style: normal;   font-variant: normal;   font-weight: 700;   line-height: 26.4px;
+      }
+
+      h2 {
+        color: black;
+        text-align: center;
+        font-size:5vw;
+        padding-right: 25%;
+        font-family: Helvetica; font-size: 19px;   font-style: normal;   font-variant: normal;   font-weight: 700;   line-height: 26.4px;
+      }
+
+      i {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 10px;
+
+      }
+
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      .upbutton {
+        padding-left: 6%
+      }
+
+      #left {
+        padding-top: 6%
+      }
+
+      #right {
+        padding-top: 6%
+      }
+      #down {
+        padding-top: 6%
+      }
+      #up {
+        padding-left: 3.5%;
+        padding-right: 5%;
+      }
 
     </style>
   </head>
   <body>
     <h1>Veggie Man</h1>
     <h2 id="score"></h2>
+    <div class="">
+
+      <button type="button" id="left" onclick="action('left')" name="left"><p><i class="arrow left"></i></p>
+
+      <button type="button" id="up" onclick="action('up')" name="up"><p><i class="arrow up"></i></p>
+
+      <button type="button" id="down" onclick="action('down')" name="down"><p><i class="arrow down"></i></p>
+
+      <button type="button" id="right" onclick="action('right')" name="right"><p><i class="arrow right"></i></p>
+    </div>
+
     <script src="game.js"></script>
     <script src="veggie-man.js"></script>
     </script>
