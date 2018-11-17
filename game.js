@@ -1,6 +1,5 @@
 var vm;
 var scle = 20;
-
 var veg;
 var meat;
 function setup() {
@@ -9,8 +8,6 @@ vm = new VeggieMan();
 frameRate(10);
 pickLocation();
 }
-
-
 function pickLocation() {
   var cols = floor(width/scle);
   var rows = floor(height/scle);
@@ -29,7 +26,7 @@ function draw() {
      pickLocation();
   };
 
-  if (vm.eat(meat)) {
+  if (vm.eatMeat(meat)) {
      pickLocation();
   };
   fill(64, 255, 0);
