@@ -47,3 +47,16 @@ function keyPressed() {
       vm.dir(-1, 0);
   }
 }
+
+function action(keyCode) {
+  if (keyCode === "up") {
+      vm.dir(0, -1);
+  } else if (keyCode === "down") {
+      vm.dir(0, 1);
+  } else if (keyCode === "right") {
+      vm.dir(1, 0);
+  } else if (keyCode === "left") {
+      vm.dir(-1, 0);
+  }
+
+}
