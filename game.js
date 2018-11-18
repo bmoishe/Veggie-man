@@ -3,7 +3,8 @@ var scle = 20;
 var veg;
 var meat;
 function setup() {
-  createCanvas(600, 600);
+var canvas = createCanvas(600, 600);
+canvas.parent('sketch-holder');
 vm = new VeggieMan();
 frameRate(10);
 pickLocation();
