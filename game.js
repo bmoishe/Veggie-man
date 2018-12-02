@@ -9,6 +9,7 @@ vm = new VeggieMan();
 frameRate(10);
 pickLocation();
 }
+
 function pickLocation() {
   var cols = floor(width/scle);
   var rows = floor(height/scle);
@@ -22,7 +23,6 @@ function draw() {
   vm.death();
   vm.update();
   vm.show();
-
   if (vm.eat(veg)) {
      pickLocation();
   };
@@ -35,6 +35,7 @@ function draw() {
 
   fill(255, 0, 0);
   rect(meat.x, meat.y, scle, scle);
+
 }
 
 function keyPressed() {

@@ -48,6 +48,7 @@ function VeggieMan() {
       if (d < 1 ) {
         this.total = 0
         this.carbonFootprint = []
+        alert("GAME OVER: You were unable to save the world");
         setup();
       }
     }
@@ -60,4 +61,6 @@ function VeggieMan() {
     fill(255);
     rect(this.x, this.y, scle, scle);
   }
+
+
 }
